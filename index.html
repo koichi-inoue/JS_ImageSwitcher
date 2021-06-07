@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ImageSwitcher</title>
+</head>
+
+<body>
+
+  <div id="container">
+
+    <header id="HeaderBlock">
+      <h1 id="PageTitle">ImageSwitcher</h1>
+    </header>
+
+    <main>
+
+      <nav id="switch">
+
+        <h2>SELECTOR</h2>
+        <ul class="selector">
+          <li><button class="select-button">image 01</button></li>
+          <li><button class="select-button">image 02</button></li>
+          <li><button class="select-button">image 03</button></li>
+          <li><button class="select-button">image 04</button></li>
+          <li><button class="select-button">image 05</button></li>
+        </ul>
+
+        <h2>PREV / NEXT</h2>
+        <ul class="prev-next">
+          <li><button id="prevButton">prev</button></li>
+          <li><button id="nextButton">next</button></li>
+        </ul>
+        
+      </nav>
+
+      <div id="stage">
+        <img src="images/PIC_01.jpg">
+        <p id="caption">images/PIC_01.jpg</p>
+      </div>
+
+    </main>
+
+    <footer>
+       &copy; http://www.example.com
+    </footer>
+
+  </div>
+
+</body>
+</html>
