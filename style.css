@@ -22,52 +22,53 @@ main {
   flex:1;
 }
 
+  #switch h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #selector {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  #selector li {
+    margin-bottom: 0.5rem;
+  }
+
+  #prev-next {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #prev-next li {
+    margin-right: 1rem;
+  }
+
+  button {
+    appearance: none;
+    border: none;
+    background-color: #1e90ff;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #FFF;
+  }
+
 #stage {
   flex:3;
 }
 
-#stage img {
-  width: 100%;
-}
+  #picture {
+    width: 100%;
+  }
 
-#stage p{
-  text-align: center;
-  margin: 1rem auto;
-}
+  #caption {
+    text-align: center;
+    margin: 1rem auto;
+  }
 
-h2 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.selector {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-}
-
-.selector li {
-  margin-bottom: 0.5rem;
-}
-
-.prev-next {
-  display: flex;
-  flex-direction: row;
-}
-
-.prev-next li {
-  margin-right: 1rem;
-}
-
-button {
-  appearance: none;
-  border: none;
-  background-color: #1e90ff;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #FFF;
-}
 
 footer {
   text-align: center;

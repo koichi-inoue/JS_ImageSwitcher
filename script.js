@@ -8,7 +8,7 @@ let fileName = [
 ]
 
 let current = 0;
-let imgElement = document.getElementById('stage').firstElementChild;
+let picture = document.getElementById('picture');
 let caption = document.getElementById('caption');
 
 // Window onload
@@ -32,7 +32,7 @@ window.onload = function(){
 // SELECTOR
 function selectImage(event) {
   current = this.number;
-  imgElement.setAttribute('src', fileName[current]);
+  picture.setAttribute('src', fileName[current]);
   caption.innerHTML = fileName[current];
 }
 
@@ -40,7 +40,7 @@ function selectImage(event) {
 function changePrev(event) {
   current --;
   if( current < 0) current = fileName.length - 1;
-  imgElement.setAttribute('src', fileName[current]);
+  picture.setAttribute('src', fileName[current]);
   caption.innerHTML = fileName[current];
 }
 
@@ -48,6 +48,6 @@ function changePrev(event) {
 function changeNext(event) {
   current ++;
   if( fileName.length <= current) current = 0;
-  imgElement.setAttribute('src', fileName[current]);
+  picture.setAttribute('src', fileName[current]);
   caption.innerHTML = fileName[current];
 }
